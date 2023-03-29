@@ -45,3 +45,9 @@ select cod_emp, data_inicio from HISTORIA_EMPREGADO where cod_servico in('IT_PRO
 select nome_servico from servico where salario_min<4500 or salario_max>12000;
 select cod_local from local where cep is null;
 select cidade from local where cidade like 'S%';
+select cidade from local where cidade >='S%';
+select to_char(to_date('20110123 13:24:14', 'yyyymmdd hh24:mi:ss'),'dd/mm/yyyy hh24-mi-ss') from dual;
+select last_day(sysdate)from dual;
+select next_day(sysdate, 7) from dual;
+select to_char((sysdate+3), 'DD/MM/YYYY') from dual;
+select to_date('15/09/2015','dd/mm/yyyy')-to_date('01/02/2015','dd/mm/yyyy') from dual;
